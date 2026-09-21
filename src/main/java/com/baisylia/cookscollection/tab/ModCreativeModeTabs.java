@@ -34,7 +34,8 @@ public class ModCreativeModeTabs {
                 output.accept(ModBlocks.LEMON_WOOD);
                 output.accept(ModBlocks.LEMON_LEAVES);
                 output.accept(ModBlocks.FRUITING_LEMON_LEAVES);
-                output.accept(ModBlocks.SALTED_DRIPSTONE_BLOCK);
+                output.accept(ModBlocks.SALT_BLOCK);
+                output.accept(ModBlocks.SALT_SPIKE);
                 output.accept(ModBlocks.LEMON_CRATE);
                 output.accept(ModBlocks.OVEN);
 

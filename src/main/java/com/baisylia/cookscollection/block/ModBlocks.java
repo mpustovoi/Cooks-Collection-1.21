@@ -1,10 +1,7 @@
 package com.baisylia.cookscollection.block;
 
 import com.baisylia.cookscollection.CooksCollection;
-import com.baisylia.cookscollection.block.custom.FruitingLeaves;
-import com.baisylia.cookscollection.block.custom.ModFlammableRotatedPillarBlock;
-import com.baisylia.cookscollection.block.custom.OvenBlock;
-import com.baisylia.cookscollection.block.custom.RusticLoafBlock;
+import com.baisylia.cookscollection.block.custom.*;
 import com.baisylia.cookscollection.item.ModItems;
 import com.baisylia.cookscollection.world.tree.ModTreeGrowers;
 import net.minecraft.core.BlockPos;
@@ -12,12 +9,10 @@ import net.minecraft.core.Direction;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.LeavesBlock;
-import net.minecraft.world.level.block.SaplingBlock;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.material.PushReaction;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -80,14 +75,16 @@ public class ModBlocks {
             () -> new RusticLoafBlock(BlockBehaviour.Properties.ofFullCopy(vectorwing.farmersdelight.common.registry.ModBlocks.APPLE_PIE.get()).noOcclusion(),
                     ModItems.RUSTIC_LOAF_SLICE));
 
-    // public static final DeferredBlock<Block> SALTED_POINTED_DRIPSTONE = BLOCKS.register("salted_pointed_dripstone",
-    //        () -> new SaltedPointedDripstone(BlockBehaviour.Properties.ofFullCopy(Blocks.POINTED_DRIPSTONE).noOcclusion()
-    //                 .sound(SoundType.POINTED_DRIPSTONE).randomTicks().strength(1.5F, 3.0F).dynamicShape().offsetType(BlockBehaviour.OffsetType.XZ))
-    //,FarmersDelight.CREATIVE_TAB, false, 0
-    // );
+    public static final DeferredBlock<Block> SALT_BLOCK = registerBlock("salt_block",
+            () -> new SaltBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.DRIPSTONE_BLOCK).randomTicks()));
 
-    public static final DeferredBlock<Block> SALTED_DRIPSTONE_BLOCK = registerBlock("salted_dripstone_block",
-            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.DRIPSTONE_BLOCK)));
+    public static final DeferredBlock<Block> SALT_SPIKE = registerBlock("salt_spike",
+            () -> new SaltSpikeBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.POINTED_DRIPSTONE)
+                    .offsetType(BlockBehaviour.OffsetType.NONE)
+                    .noOcclusion()
+                    .sound(SoundType.POINTED_DRIPSTONE)
+                    .strength(1.5F, 3.0F)
+                    .pushReaction(PushReaction.DESTROY)));
 
     public static final DeferredBlock<Block> OVEN = registerBlock("oven",
             () -> new OvenBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.BRICKS)));

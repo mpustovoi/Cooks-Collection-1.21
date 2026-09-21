@@ -1,7 +1,8 @@
 {
   "replace": false,
   "values": [
-    "cookscollection:salted_dripstone_block",
+    "cookscollection:salt_block",
+    "cookscollection:salt_spike",
     "cookscollection:oven"
   ]
 }

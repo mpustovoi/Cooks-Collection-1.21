@@ -2,32 +2,27 @@
   "parent": "farmersdelight:main/craft_knife",
   "display": {
     "icon": {
-      "id": "cookscollection:salt"
+      "id": "cookscollection:salt_spike"
     },
-    "title": "Why so salty?!",
-    "description": "Place soul sand between water and dripstone",
+    "title": {
+      "translate": "advancement.cookscollection.salt.title"
+    },
+    "description": {
+      "translate": "advancement.cookscollection.salt.description"
+    },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": false
   },
   "criteria": {
-    "salt": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "items": [
-	      "cookscollection:salt"
- 	    ]
-          }
-        ]
-      }
+    "grow_salt_spike": {
+      "trigger": "cookscollection:grow_salt_spike"
     }
   },
   "requirements": [
     [
-      "salt"
+      "grow_salt_spike"
     ]
   ]
 }

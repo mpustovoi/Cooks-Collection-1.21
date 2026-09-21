@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "cookscollection:block/salt_spike",
+      "x": 180
+    },
+    "facing=east": {
+      "model": "cookscollection:block/salt_spike",
+      "x": 90,
+      "y": 90
+    },
+    "facing=north": {
+      "model": "cookscollection:block/salt_spike",
+      "x": 90
+    },
+    "facing=south": {
+      "model": "cookscollection:block/salt_spike",
+      "x": 90,
+      "y": 180
+    },
+    "facing=up": {
+      "model": "cookscollection:block/salt_spike"
+    },
+    "facing=west": {
+      "model": "cookscollection:block/salt_spike",
+      "x": 90,
+      "y": 270
+    }
+  }
+}

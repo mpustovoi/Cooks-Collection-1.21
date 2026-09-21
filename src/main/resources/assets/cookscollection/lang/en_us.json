@@ -31,8 +31,12 @@
   "block.cookscollection.lemon_sapling": "Lemon Sapling",
   "block.cookscollection.lemon_crate": "Lemon Crate",
   "block.cookscollection.rustic_loaf": "Rustic Loaf",
-  "block.cookscollection.salted_dripstone_block": "Salt Block",
+  "block.cookscollection.salt_block": "Salt Block",
+  "block.cookscollection.salt_spike": "Salt Spike",
 
   "container.cookscollection.oven.heated": "Heated",
-  "container.cookscollection.oven.not_heated": "Needs heat from below"
+  "container.cookscollection.oven.not_heated": "Needs heat from below",
+
+  "advancement.cookscollection.salt.title": "Why So Salty?!",
+  "advancement.cookscollection.salt.description": "Set up a renewable Salt Spike farm with Water, a Salt Block, and Pointed Dripstone"
 }

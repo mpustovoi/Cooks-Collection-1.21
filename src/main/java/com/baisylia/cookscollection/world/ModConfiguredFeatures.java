@@ -35,8 +35,8 @@ public class ModConfiguredFeatures {
         RuleTest deepslateReplaceables = new TagMatchTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES);
 
         List<OreConfiguration.TargetBlockState> overworldSalt = List.of(
-                OreConfiguration.target(stoneReplaceables, ModBlocks.SALTED_DRIPSTONE_BLOCK.get().defaultBlockState()),
-                OreConfiguration.target(deepslateReplaceables, ModBlocks.SALTED_DRIPSTONE_BLOCK.get().defaultBlockState()));
+                OreConfiguration.target(stoneReplaceables, ModBlocks.SALT_BLOCK.get().defaultBlockState()),
+                OreConfiguration.target(deepslateReplaceables, ModBlocks.SALT_BLOCK.get().defaultBlockState()));
 
         register(context, OVERWORLD_SALT_KEY, Feature.ORE, new OreConfiguration(overworldSalt, 30));
 
@@ -52,7 +52,6 @@ public class ModConfiguredFeatures {
                 //new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 4),
                 //new AcaciaFoliagePlacer(ConstantInt.of(3), ConstantInt.of(0)),
                 new TwoLayersFeatureSize(1, 0, 1)).ignoreVines().build());
-
 
     }
 

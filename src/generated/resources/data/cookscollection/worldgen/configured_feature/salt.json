@@ -6,7 +6,7 @@
     "targets": [
       {
         "state": {
-          "Name": "cookscollection:salted_dripstone_block"
+          "Name": "cookscollection:salt_block"
         },
         "target": {
           "predicate_type": "minecraft:tag_match",
@@ -15,7 +15,7 @@
       },
       {
         "state": {
-          "Name": "cookscollection:salted_dripstone_block"
+          "Name": "cookscollection:salt_block"
         },
         "target": {
           "predicate_type": "minecraft:tag_match",

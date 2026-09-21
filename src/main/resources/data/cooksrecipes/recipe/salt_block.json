@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "cookscollection:salt"
+    },
+    {
+      "item": "cookscollection:salt"
+    },
+    {
+      "item": "cookscollection:salt"
+    },
+    {
+      "item": "cookscollection:salt"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "cookscollection:salt_block"
+  }
+}
